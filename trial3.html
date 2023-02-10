@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<script src="vue.js"></script>
+</head>
+<body>
+<div id="demo">
+
+<ol v-for="y in names">
+    <li>{{y.message}}</li>
+</ol>
+
+</div>
+<script>
+var a = new Vue({el:"#demo", data:{names:[
+    {message: "Musyoka Alvin"},
+    {message: "Uwase Rebecca"},
+    {message: "Uwiringiyimana Valentine"},
+    {message: "Umuganwa Rogers"}
+    ]}});
+
+
+</script>
+
+</body>
+</html>

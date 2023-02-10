@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="vue.js"></script>
+<style>
+body{
+
+    background: url("2.jpg");
+}
+
+p{
+
+color: goldenrod;
+font-style:italic;
+font-size: 300px;
+background: url("1.jpg");
+text-align:center;
+padding: 20px;
+border: 2px solid silver;
+border-radius: 10px;;
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div id="demo">
+
+<p> My name is {{name}} , I am {{age}} years old, I study at {{school}} learning a course called {{course}} </p>
+</div>
+<script>
+
+
+var name = new Vue({el:"#demo", data:{ name:"UWERA ALICE",sex:"Female",school:"HAVARD UNIVERSITY", age:25, course:"Software engineering" }});
+
+
+</script>
+</body>
+</html>

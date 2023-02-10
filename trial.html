@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+<p v-for="r in text">  
+{{r.message}}
+</p>
+</div>
+<script>
+
+var a = new Vue({el:"#app", data:{
+text:[{message:"Hello there"},
+{message:"My name is Chriss"},
+{message:"I study at ETSK Musha"}
+]}});
+
+</script>
+</body>
+
+</html>
